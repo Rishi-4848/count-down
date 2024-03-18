@@ -1,9 +1,11 @@
 import React from 'react';
+import "./App.css"
+import DateTimePicker from './components/DateTimePicker/DateTimePicker';
 
 const App = () => {
   return (
-    <div>
-      app
+    <div className='app'>
+     <DateTimePicker/>
     </div>
   );
 }

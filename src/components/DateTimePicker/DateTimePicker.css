@@ -1,0 +1,132 @@
+.date-time-picker{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header{
+   font-size: 32px;
+   font-weight: 600;
+}
+
+.date-time-picker input{
+  padding: 0.5rem 1rem;
+  color: chocolate;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.countdown-btn{
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: chocolate;
+}
+
+.countdown-timer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.countdown-timer p {
+  border: 1px solid bisque;
+  padding: 1rem ;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.count-success{
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(237, 218, 109);
+}
+
+.count-error{
+  font-size: 30px;
+  font-weight: 400;
+  color:red;
+}
+
+
+@media screen and (max-width:700px) {
+   .countdown-timer{
+    flex-direction: column;
+    gap: 15px;
+   }
+
+   .countdown-timer p{
+    min-width: 150px;
+   }
+
+  
+}
+
+
+@media screen and (max-width:450px) {
+  .header{
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .date-time-picker input{
+    font-size: 20px;
+    padding: 0.5rem;
+  }
+  .countdown-btn{
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .countdown-timer p {
+    padding: 0.5rem;
+    font-size: 16px;
+    min-width: 100px;
+  }
+
+  .count-success{
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .count-error{
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width:300px) {
+
+   .header{
+    font-size: 16px;
+   }
+
+
+   .date-time-picker input{
+    width: 70%;
+    font-size: 16px;
+    padding: 0.5rem 0.2rem;
+   }
+
+   .countdown-btn{
+    font-size: 14px;
+   }
+
+   .countdown-timer p{
+      font-size: 12px;
+      min-width: 50px;
+   }
+
+   .count-success{
+    font-size: 12px;
+    
+  }
+
+  .count-error{
+    font-size: 12px;
+  }
+}
